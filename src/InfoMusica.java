@@ -1,17 +1,24 @@
 public class InfoMusica {
-    public static void main(String[] args) {
 
-        Musica musica1 = new Musica();
+    String titulo;
+    String artista;
+    int anolancamento;
+    double somaAvaliacao;
+    int totalAvaliacao;
 
-        musica1.artista = "Felipe ret";
-        musica1.titulo = "Faça você mesmo";
-
-        musica1.avaliacao(10);
-        musica1.avaliacao(10);
-        musica1.avaliacao(10);
-
-        musica1.exibirFichaTecnica();
-        System.out.println(musica1.mediaAvaliacoesMusica());
-        System.out.println(musica1.totalAvaliacao);
+    void exibirFichaTecnica(){
+        System.out.println("Artista: " + artista);
+        System.out.println("Titulo: " + titulo);
     }
+
+    void avaliacao(double nota){
+        somaAvaliacao += nota;
+        totalAvaliacao++;
+    }
+
+    double mediaAvaliacoesMusica(){
+        return somaAvaliacao / totalAvaliacao;
+    }
+
+
 }
