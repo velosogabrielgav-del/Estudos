@@ -12,5 +12,6 @@ public class InfoMusica {
 
         musica1.exibirFichaTecnica();
         System.out.println(musica1.mediaAvaliacoesMusica());
+        System.out.println(musica1.totalAvaliacao);
     }
 }
