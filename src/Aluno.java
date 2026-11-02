@@ -1,11 +1,13 @@
 public class Aluno {
     public static void main(String[] args) {
 
-        InfoAluno info1 = new InfoAluno();
+        InfoAluno aluno = new InfoAluno();
 
-        info1.nome = "Gabriel";
-        info1.idade = 23;
+        aluno.setNome("gabriel");
+        aluno.setNotas(new double[]{10.0, 4.0});
 
-        info1.exibirDados();
+        double media = aluno.calcularMedia();
+        System.out.println("Media: " + media);
+
     }
 }
