@@ -1,4 +1,4 @@
-package PACKAGE_NAME;
+public interface Tabuada {
 
-public class Tabuada {
+    String mostrarTabuada();
 }

@@ -1,14 +1,34 @@
 public class Carro {
-    public static void main(String[] args) {
 
-        InfoCarro carro1 = new InfoCarro();
-
-        carro1.modelo = "Fiat uno";
-        carro1.cor = "Preto";
-        carro1.anoDoCarro = 2021;
+    private String nome;
+    private double[] preco;
 
 
-        carro1.exibirFichaTecnica();
-        System.out.println("O carro tem : " +carro1.anoCarro()+ " anos");
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double[] getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double[] preco) {
+        this.preco = preco;
+    }
+
+    public double menorPreco(){
+        double menor = preco[0];
+        for (int i = 0; i < preco.length; i++) {
+            if (preco[i] < menor){
+                menor = preco[i];
+
+            }
+
+        }return menor;
     }
 }
+

@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
+public interface ConversaoFinanceira {
+     double converterDolarParaReal();
 
-public class ConversaoFinanceira {
+
+
 }
