@@ -1,4 +1,4 @@
 public interface Tabuada {
 
-    String mostrarTabuada();
+    void mostrarTabuada();
 }

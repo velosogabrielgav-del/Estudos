@@ -1,12 +1,16 @@
-public class TabuadaMultiplicacao implements Tabuada{
+public class TabuadaMultiplicacao implements Tabuada {
 
-    private double numero;
+    private final int  numero;
 
-    public TabuadaMultiplicacao(double numero){
-        for (double numeroo = 0; numeroo <=10; numeroo++) {
-            System.out.println("Tabuada do " +numero);
-        }
+    public TabuadaMultiplicacao(int numero) {
+        this.numero = numero;
     }
 
-
+    @Override
+    public void mostrarTabuada() {
+        for (int i = 1; i <= 10; i++) {
+            int resultado = numero * i;
+            System.out.println(i + " x " + numero + " = " + resultado);
+        }
+    }
 }
