@@ -2,8 +2,8 @@ package comparabletitulo;
 
 public class Titulo implements Comparable<Titulo>{
 
-    private String titulo;
-    private String descricao;
+    private final String titulo;
+    private final String descricao;
 
     public Titulo(String titulo, String descricao) {
         this.titulo = titulo;
@@ -21,7 +21,7 @@ public class Titulo implements Comparable<Titulo>{
 
     @Override
     public int compareTo(Titulo outro) {
-        return this.titulo.compareTo(outro.titulo);
+        return this.titulo.compareToIgnoreCase(outro.titulo);
     }
 
     @Override
